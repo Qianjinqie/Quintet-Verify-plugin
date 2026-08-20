@@ -50,7 +50,7 @@ pip install .
 
 <a id="usage"></a>
 
-Usage
+### Usage
 
 After installation, the plugins are automatically registered with Quintet-Verify’s mount points. Enable the corresponding plugin flags in the Web console, or set them in the configuration:
 
