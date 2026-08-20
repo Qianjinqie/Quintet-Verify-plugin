@@ -1,10 +1,23 @@
-Quintet-Verify-plugin
+# Quintet-Verify-plugin
 
 Quintet-Verify Cognitive Enhancement Plugin Pack – extends the five‑role behaviour through standardised mount points without intruding into the core workflow.
 
+## Table of Contents
+
+- [Project Positioning](#project-positioning)
+- [Design Philosophy](#design-philosophy)
+- [Quick Start](#quick-start)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Relationship with the Main Framework](#relationship-with-the-main-framework)
+- [Theoretical Origins and Independence Statement](#theoretical-origins-and-independence-statement)
+- [License](#license)
+- [Related Links](#related-links)
+
 ---
 
-Project Positioning
+<a id="project-positioning"></a>
+## Project Positioning
 
 qv-extras is an optional extension package for Quintet-Verify. It provides a set of cognitive‑enhancement plugins that are injected via the standardised pre_act_hooks / post_act_hooks mount points exposed by the main framework.
 
@@ -12,17 +25,20 @@ All plugins are off by default – users enable them on demand via the Web conso
 
 ---
 
-Design Philosophy
+<a id="design-philosophy"></a>
+## Design Philosophy
 
-· Non‑invasive – does not modify Quintet-Verify core code; injects only through mount points.
-· On‑demand enabling – all plugins are off by default; users selectively turn them on based on task requirements.
-· Composable – plugins are independent of each other and can be used in any combination.
+- Non‑invasive – does not modify Quintet-Verify core code; injects only through mount points.  
+- On‑demand enabling – all plugins are off by default; users selectively turn them on based on task requirements.  
+- Composable – plugins are independent of each other and can be used in any combination.
 
 ---
 
-Quick Start
+<a id="quick-start"></a>
+## Quick Start
 
-Installation
+<a id="installation"></a>
+### Installation
 
 Install directly from source:
 
@@ -31,6 +47,8 @@ git clone https://github.com/Qianjinqie/Quintet-Verify-plugin.git
 cd Quintet-Verify-plugin
 pip install .
 ```
+
+<a id="usage"></a>
 
 Usage
 
@@ -53,6 +71,8 @@ state = QuintetState(
 
 ---
 
+<a id="relationship-with-the-main-framework"></a>
+
 Relationship with the Main Framework
 
  Quintet-Verify (core) qv-extras (this package)
@@ -64,6 +84,8 @@ Dependency Runs independently, does not depend on this package Depends on the ma
 This package is an optional enhancement layer for the main framework, not a required component.
 
 ---
+
+<a id="theoretical-origins-and-independence-statement"></a>
 
 Theoretical Origins and Independence Statement
 
@@ -77,6 +99,8 @@ For the full theoretical origins and independence statement of the Quintet-Verif
 
 ---
 
+<a id="license"></a>
+
 License
 
 This project adopts the same license as the main framework: Apache License 2.0.
@@ -84,6 +108,8 @@ This project adopts the same license as the main framework: Apache License 2.0.
 See the LICENSE file for details.
 
 ---
+
+<a id="related-links"></a>
 
 Related Links
 
