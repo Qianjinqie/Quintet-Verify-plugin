@@ -73,7 +73,7 @@ state = QuintetState(
 
 <a id="relationship-with-the-main-framework"></a>
 
-Relationship with the Main Framework
+## Relationship with the Main Framework
 
  Quintet-Verify (core) qv-extras (this package)
 Core five‑role checks & balances ✅ core capability ❌ not involved
@@ -87,7 +87,7 @@ This package is an optional enhancement layer for the main framework, not a requ
 
 <a id="theoretical-origins-and-independence-statement"></a>
 
-Theoretical Origins and Independence Statement
+## Theoretical Origins and Independence Statement
 
 Some mechanism designs in qv-extras (pre‑conclusion bridging, broadcast hub, metacognitive control as action) are inspired by J‑Space Cognition Suite V3.6 (doi:10.5281/zenodo.21971181), drawing on its concepts of “Dense Track” and cognitive markers (✓/?/✗).
 
@@ -101,7 +101,7 @@ For the full theoretical origins and independence statement of the Quintet-Verif
 
 <a id="license"></a>
 
-License
+## License
 
 This project adopts the same license as the main framework: Apache License 2.0.
 
@@ -111,7 +111,7 @@ See the LICENSE file for details.
 
 <a id="related-links"></a>
 
-Related Links
+## Related Links
 
 · Quintet-Verify main framework – Multi‑agent cognitive control framework
 · J‑Space Cognition Suite V3.6 – Single‑model cognitive management
