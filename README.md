@@ -1,26 +1,30 @@
-# Quintet-Verify-plugin
-> Quintet-Verify 认知增强插件包 —— 通过标准化挂载点扩展五角色行为，不侵入核心流程。
+Quintet-Verify-plugin
+
+Quintet-Verify Cognitive Enhancement Plugin Pack – extends the five‑role behaviour through standardised mount points without intruding into the core workflow.
 
 ---
 
-## 项目定位
+Project Positioning
 
-`qv-extras` 是 [Quintet-Verify](https://github.com/Qianjinqie/Quintet-Verify) 的可选扩展包，提供一系列认知增强插件，通过主框架暴露的 `pre_act_hooks` / `post_act_hooks` 标准化挂载点注入行为。
+qv-extras is an optional extension package for Quintet-Verify. It provides a set of cognitive‑enhancement plugins that are injected via the standardised pre_act_hooks / post_act_hooks mount points exposed by the main framework.
 
-插件**默认全部关闭**，由用户在 Web 控制台或配置中按需开启。核心框架不受插件影响，未安装本包时 Quintet-Verify 完整功能不受任何影响。
+All plugins are off by default – users enable them on demand via the Web console or configuration. The core framework is unaffected by plugins; without this package, Quintet-Verify’s full functionality remains intact.
 
+---
 
-## 设计哲学
+Design Philosophy
 
-- **非侵入**：不修改 Quintet-Verify 核心代码，仅通过挂载点注入
-- **按需启用**：所有插件默认关闭，用户根据任务需求选择性开启
-- **可组合**：插件之间相互独立，可任意组合使用
+· Non‑invasive – does not modify Quintet-Verify core code; injects only through mount points.
+· On‑demand enabling – all plugins are off by default; users selectively turn them on based on task requirements.
+· Composable – plugins are independent of each other and can be used in any combination.
 
+---
 
-## 快速开始
+Quick Start
 
-### 安装
-直接从源码安装：
+Installation
+
+Install directly from source:
 
 ```bash
 git clone https://github.com/Qianjinqie/Quintet-Verify-plugin.git
@@ -28,9 +32,9 @@ cd Quintet-Verify-plugin
 pip install .
 ```
 
-使用
+Usage
 
-安装后，插件会自动注册到 Quintet-Verify 的挂载点。在 Web 控制台中开启对应插件的 flags 开关即可启用，或在配置中设置：
+After installation, the plugins are automatically registered with Quintet-Verify’s mount points. Enable the corresponding plugin flags in the Web console, or set them in the configuration:
 
 ```python
 from quintet_verify import PublicState, QuintetState
@@ -39,41 +43,49 @@ state = QuintetState(
     public=PublicState(
         task="...",
         flags={
-            "plugin_a": True,   # 开启插件 A
-            "plugin_b": False,  # 关闭插件 B
+            "plugin_a": True,   # enable plugin A
+            "plugin_b": False,  # disable plugin B
             # ...
         }
     )
 )
 ```
 
-与主框架的关系
+---
 
- Quintet-Verify（主框架） qv-extras（本包）
-核心五角色制衡 ✅ 核心能力 ❌ 不涉及
-三条铁律 ✅ 核心能力 ❌ 不涉及
-认知增强插件 ❌ 不包含 ✅ 本包提供
-依赖关系 独立运行，不依赖本包 依赖主框架（运行时检测挂载点）
+Relationship with the Main Framework
 
-本包是主框架的可选增强层，而非必要组件。
+ Quintet-Verify (core) qv-extras (this package)
+Core five‑role checks & balances ✅ core capability ❌ not involved
+Three iron rules ✅ core capability ❌ not involved
+Cognitive‑enhancement plugins ❌ not included ✅ provided by this package
+Dependency Runs independently, does not depend on this package Depends on the main framework (detects mount points at runtime)
 
-理论溯源与独立性声明
+This package is an optional enhancement layer for the main framework, not a required component.
 
-qv-extras 的部分机制设计（结论前桥接、广播枢纽、元认知控制即动作）受到 J-Space Cognition Suite V3.6（doi:10.5281/zenodo.21971181）的启发，借鉴了其关于“Dense Track”和认知标记（✓/?/✗）的理念。
+---
 
-但本仓库的所有代码均为独立实现，未复制或翻译 J-Space 的任何源代码、提示词模板或协议文案。根据 Apache License 2.0 对“衍生作品”的定义，本插件作为通过标准化接口调用的独立模块，不构成 J-Space 的衍生作品或分支。
+Theoretical Origins and Independence Statement
 
-我们对 J-Space 团队的原创工作表示敬意与感谢，并建议读者将其作为理解本插件设计背景的有益对照参考。
+Some mechanism designs in qv-extras (pre‑conclusion bridging, broadcast hub, metacognitive control as action) are inspired by J‑Space Cognition Suite V3.6 (doi:10.5281/zenodo.21971181), drawing on its concepts of “Dense Track” and cognitive markers (✓/?/✗).
 
-Quintet-Verify 主框架的完整理论溯源与独立性声明，请参阅主仓库 README。
+However, all code in this repository is independently implemented; no source code, prompt templates, or protocol texts from J‑Space have been copied or translated. Under the definition of “derivative work” in the Apache License 2.0, this plugin package – as an independent module invoked through standardised interfaces – does not constitute a derivative work or fork of J‑Space.
 
-许可证
+We express our respect and gratitude to the J‑Space team for their original work, and recommend readers refer to it as a useful comparative reference for understanding the design background of this plugin.
 
-本项目的许可证与主框架保持一致：Apache License 2.0。
+For the full theoretical origins and independence statement of the Quintet-Verify main framework, please see the main repository README.
 
-详见 LICENSE 文件。
+---
 
-相关链接
+License
 
-· Quintet-Verify 主框架 — 多智能体认知控制框架
-· J-Space Cognition Suite V3.6 — 单一模型认知管理（doi:10.5281/zenodo.21971181）
+This project adopts the same license as the main framework: Apache License 2.0.
+
+See the LICENSE file for details.
+
+---
+
+Related Links
+
+· Quintet-Verify main framework – Multi‑agent cognitive control framework
+· J‑Space Cognition Suite V3.6 – Single‑model cognitive management
