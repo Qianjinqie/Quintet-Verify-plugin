@@ -117,3 +117,5 @@ See the LICENSE file for details.
 
 · Quintet-Verify main framework – Multi‑agent cognitive control framework
 · J‑Space Cognition Suite V3.6 – Single‑model cognitive management
+
+**Note: If there are any translation errors in other languages, please refer to this version**
